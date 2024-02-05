@@ -1,5 +1,48 @@
+header {
+  background-color: white;
+  border-bottom: solid black 3px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
 h1 {
   text-align: center;
-  border-bottom: solid;
-  padding: 30px;
+}
+
+.card {
+  border: solid;
+  padding: 5px;
+  margin: 30px;
+  position: relative;
+}
+
+.cardtext {
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+}
+
+.singletag {
+  border: solid;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: beige;
+  font-size: 13px;
+}
+
+.bookmark {
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: 10px;
 }
