@@ -5,12 +5,17 @@ header {
   top: 0;
   z-index: 1;
   width: 100%;
+  left: 0;
 }
 
 h1 {
   text-align: center;
 }
 
+main {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
 .card {
   border: solid;
   padding: 5px;
@@ -45,4 +50,30 @@ h1 {
   position: absolute;
   top: -10px;
   right: 10px;
+}
+
+.footer {
+  width: 100%;
+  left: 0;
+  background-color: rgb(179, 179, 179);
+  position: fixed;
+  bottom: 0;
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navitem {
+  height: 2rem;
+  padding: 2px 20px;
+  border-radius: 10px;
+}
+
+a:hover {
+  background: white;
+  border-radius: 10px;
+}
+
+#homeicon {
+  background-color: white;
 }
