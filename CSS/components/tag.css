@@ -1,0 +1,14 @@
+.tags {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.singletag {
+  border: solid;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: beige;
+  font-size: 13px;
+}

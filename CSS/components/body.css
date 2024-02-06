@@ -1,0 +1,26 @@
+main {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.avatarpic {
+  padding: 5px;
+  margin-right: 10px;
+  border: solid grey;
+}
+
+.avatarname {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.modeSetting {
+  display: flex;
+  gap: 20px;
+}
+
+body.dark {
+  background-color: rgb(37, 37, 37);
+  color: white;
+}

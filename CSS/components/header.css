@@ -1,0 +1,13 @@
+header {
+  background-color: white;
+  border-bottom: solid black 3px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+
+h1 {
+  text-align: center;
+}

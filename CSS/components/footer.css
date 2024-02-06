@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  left: 0;
+  background-color: rgb(179, 179, 179);
+  position: fixed;
+  bottom: 0;
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+}
+
+a:hover {
+  background: white;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: white;
+}
+
+.navitem {
+  height: 2rem;
+  padding: 2px 20px;
+  border-radius: 10px;
+}
