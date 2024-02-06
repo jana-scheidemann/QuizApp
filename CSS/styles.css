@@ -90,3 +90,13 @@ a:hover {
   display: flex;
   align-items: center;
 }
+
+.modeSetting {
+  display: flex;
+  gap: 20px;
+}
+
+body.dark {
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
