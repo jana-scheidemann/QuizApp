@@ -8,7 +8,7 @@
 .singletag {
   border: solid;
   padding: 3px;
-  border-radius: 5px;
-  background-color: beige;
+  border-radius: var(--general-border-radius);
+  background-color: var(--color-light);
   font-size: 13px;
 }

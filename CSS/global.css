@@ -1,0 +1,11 @@
+:root {
+  --color-light: rgb(151, 212, 151);
+  --color-medium: rgb(69, 138, 69);
+  --color-dark: rgb(28, 78, 28);
+  --color-foam: rgb(242, 242, 242);
+  --general-border-radius: 5px;
+}
+
+/* * {
+  border: solid;
+} */

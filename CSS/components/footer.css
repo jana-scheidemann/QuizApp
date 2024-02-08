@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   left: 0;
-  background-color: rgb(179, 179, 179);
+  background-color: var(--color-dark);
   position: fixed;
   bottom: 0;
   padding: 8px;
@@ -11,7 +11,7 @@
 
 a:hover {
   background: white;
-  border-radius: 10px;
+  border-radius: var(--general-border-radius);
 }
 
 .active {
@@ -21,5 +21,5 @@ a:hover {
 .navitem {
   height: 2rem;
   padding: 2px 20px;
-  border-radius: 10px;
+  border-radius: var(--general-border-radius);
 }

@@ -1,6 +1,7 @@
-@import "/CSS/components/body.css";
-@import "/CSS/components/button.css";
-@import "/CSS/components/card.css";
-@import "/CSS/components/footer.css";
-@import "/CSS/components/header.css";
-@import "/CSS/components/tag.css";
+@import "global.css";
+@import "components/body.css";
+@import "components/card.css";
+@import "components/button.css";
+@import "components/footer.css";
+@import "components/header.css";
+@import "components/tag.css";

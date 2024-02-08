@@ -6,9 +6,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
 }
 
-.bookmark {
+.card .bookmark {
   height: 20px;
   position: absolute;
   top: -10px;
