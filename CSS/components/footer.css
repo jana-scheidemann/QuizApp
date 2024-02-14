@@ -6,16 +6,16 @@
   bottom: 0;
   padding: 8px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 a:hover {
-  background: white;
+  background: var(--color-foam);
   border-radius: var(--general-border-radius);
 }
 
 .active {
-  background-color: white;
+  background-color: var(--color-foam);
 }
 
 .navitem {

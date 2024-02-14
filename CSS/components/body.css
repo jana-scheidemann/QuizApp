@@ -1,12 +1,15 @@
+html {
+  background-color: var(--color-foam);
+}
+
 main {
-  margin-top: 100px;
-  margin-bottom: 70px;
+  margin: 100px 1rem 70px 1rem;
 }
 
 .avatarpic {
   padding: 5px;
   margin-right: 10px;
-  border: solid var(--color-dark);
+  height: 100px;
 }
 
 .avatarname {
@@ -20,7 +23,7 @@ main {
   gap: 20px;
 }
 
-body.dark {
-  background-color: rgb(37, 37, 37);
-  color: white;
+.dark {
+  background-color: var(--color-darkMode);
+  color: var(--color-foam);
 }
