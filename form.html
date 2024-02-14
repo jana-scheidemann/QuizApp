@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="JS/script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <main>
+      <form data-js="" ="newCardForm">
+        <fieldset class="fieldset-container">
+          <label for="questionField">Your question: </label>
+          <textarea name="questionField" id="questionField"> </textarea>
+
+          <label for="answerField">Your answer: </label>
+          <textarea name="answerField" id="answerField"> </textarea>
+
+          <label for="tagField">Tag: (seperated by ",")</label>
+          <input type="text" name="tagField" id="tagField" />
+          <button type="submit" data-js="formSubmitButton">submit</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <nav class="footer">
+        <a href="index.html"
+          ><img src="Pictures/home.png" alt="go to homepage" class="navitem"
+        /></a>
+        <a href="bookmarks.html"
+          ><img
+            src="Pictures/black bookmark.png"
+            alt="go to bookmarks"
+            class="navitem"
+        /></a>
+        <a href="form.html"
+          ><img src="Pictures/form.png" alt="go to form" class="navitem active"
+        /></a>
+        <a href="profile.html"
+          ><img src="Pictures/user.png" alt="go to profile"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
