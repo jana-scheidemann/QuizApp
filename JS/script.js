@@ -1,34 +1,21 @@
-const mainElement = document.querySelector("html");
-const cardElement = document.querySelector('[data-js="card-container"]');
-const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
-const darkMode = document.querySelector('[data-js="dark-switch"]');
-const answerButton = document.querySelector('[data-js="answerButton"]');
-const answerText = document.querySelector('[data-js="hiddenAnswer"]');
-const form = document.querySelector('[data-js="newCardForm"]');
-const formButton = document.querySelector('[data-js="formSubmitButton"]');
+// --- BOOKMARK BUTTON ---//
+const card1 = document.querySelector('[data-js="card1"]');
+const bookmark_button = card1.querySelector('[data-js="bookmark-button"]');
 
-darkMode.addEventListener("click", () => {
-  mainElement.classList.toggle("dark");
+bookmark_button.addEventListener("click", () => {
+  bookmark_button.classList.toggle("bookmarkChecked");
 });
 
-bookmarkButton.addEventListener("click", () => {
-  bookmarkButton.classList.toggle("active");
-});
+// --- ANSWER BUTTON ---//
+const answer_button = document.querySelector('[data-js="answer-button"]');
+const answer_text = document.querySelector('[data-js="answer-text"]');
 
-answerButton.addEventListener("click", () => {
-  if (answerText.hidden === true) {
-    answerText.removeAttribute("hidden");
+answer_button.addEventListener("click", () => {
+  if (answer_text.hidden === true) {
+    answer_text.removeAttribute("hidden");
+    answer_button.textContent = "click to hide answer";
   } else {
-    answerText.setAttribute("hidden");
+    answer_text.setAttribute("hidden", "");
+    answer_button.textContent = "click to show answer";
   }
 });
-
-form.addEventListener("submit", (event) => {});
-event.preventDefault();
-
-const formElements = event.target.elements;
-
-const formData = new FormData(event.target);
-const data = Object.fromEntries(formData);
-
-const newCard = document.createElement();

@@ -13,52 +13,26 @@
     </header>
 
     <main>
-      <section class="card">
-        <p>text text question text</p>
-        <button class="answerbutton">click to show answer</button>
-        <p hidden>answer text goes here</p>
+      <section class="cardContainer">
+        <h2>text text question text</h2>
+        <button type="button" class="answerButton" data-js="answer-button">
+          click to show answer
+        </button>
+        <div class="answerText" data-js="answer-text" hidden>
+          answer text goes here
+        </div>
         <div class="tags">
           <p class="singletag">#html</p>
           <p class="singletag">#flexbox</p>
           <p class="singletag">#css</p>
         </div>
-        <img
-          class="bookmark"
-          src="Pictures/white bookmark.png"
-          alt="save as bookmark"
-        />
-      </section>
-
-      <section class="card">
-        <p>text text question text</p>
-        <button class="answerbutton">click to show answer</button>
-        <p hidden>answer text goes here</p>
-        <div class="tags">
-          <p class="singletag">#html</p>
-          <p class="singletag">#flexbox</p>
-          <p class="singletag">#css</p>
+        <div class="bookmarkContainer">
+          <button
+            type="button"
+            class="bookmarkButton"
+            data-js="bookmark-button"
+          ></button>
         </div>
-        <img
-          class="bookmark"
-          src="Pictures/white bookmark.png"
-          alt="save as bookmark"
-        />
-      </section>
-
-      <section class="card">
-        <p>text text question text</p>
-        <button class="answerbutton">click to show answer</button>
-        <p hidden>answer text goes here</p>
-        <div class="tags">
-          <p class="singletag">#html</p>
-          <p class="singletag">#flexbox</p>
-          <p class="singletag">#css</p>
-        </div>
-        <img
-          class="bookmark"
-          src="Pictures/white bookmark.png"
-          alt="save as bookmark"
-        />
       </section>
     </main>
 
@@ -69,11 +43,13 @@
         /></a>
         <a href="bokmarks.html"
           ><img
-            src="Pictures/black bookmark.png"
+            src="Pictures/blackbookmark.png"
             alt="go to bookmarks"
             class="navitem active"
         /></a>
-        <a href="form.html"><img src="Pictures/form.png" alt="go to form" /></a>
+        <a href="form.html"
+          ><img src="Pictures/form.png" alt="go to form" class="navitem"
+        /></a>
         <a href="profile.html"
           ><img src="Pictures/user.png" alt="go to profile" class="navitem"
         /></a>

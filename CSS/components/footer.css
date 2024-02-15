@@ -21,6 +21,7 @@ a:hover {
 
 .navitem {
   height: 2rem;
+  width: 2rem;
   padding: 2px 20px;
   border-radius: var(--general-border-radius);
 }

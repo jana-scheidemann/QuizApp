@@ -1,4 +1,4 @@
-.card {
+.cardContainer {
   border: solid;
   padding: 1em;
   margin: 2em 0;
@@ -9,24 +9,26 @@
   position: relative;
 }
 
-.bookmark-container {
+.bookmarkContainer {
   position: absolute;
   top: -1em;
   right: 1em;
+  width: 3em;
+  height: 3em;
+  background: var(--color-medium);
+  /* border-radius: 50%; */
 }
 
 .bookmarkButton {
   border: none;
   width: 3em;
   height: 3em;
-  border-radius: 50%;
-  background: var(--color-medium);
+  background-image: url("/Pictures/whitebookmark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--color-medium);
 }
 
-.bookmark {
-  width: 1.5em;
-}
-
-.active {
-  background: var(--color-foam);
+.bookmarkChecked {
+  background-image: url("/Pictures/blackbookmark.png");
 }
