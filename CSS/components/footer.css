@@ -5,14 +5,12 @@
   background-color: var(--color-dark);
   position: fixed;
   bottom: 0;
-  padding: 8px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 a:hover {
   background: var(--color-foam);
-  border-radius: var(--general-border-radius);
 }
 
 .active {
@@ -22,6 +20,5 @@ a:hover {
 .navitem {
   height: 2rem;
   width: 2rem;
-  padding: 2px 20px;
-  border-radius: var(--general-border-radius);
+  padding: 0.5rem 1rem;
 }
