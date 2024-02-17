@@ -24,20 +24,20 @@ form.addEventListener("submit", (event) => {
   const new_card_tag = document.createElement("p");
   new_card_tag.classList.add("singletag");
   new_card_tag.textContent = tagInput;
-  //   const new_card_bookmark = document.createElement("div");
-  //   new_card_bookmark.classList.add("bookmarkContainer");
-  //   const new_card_bookmark_button = document.createElement("button");
-  //   new_card_bookmark_button.classList.add("bookmarkButton");
+  const new_card_bookmark = document.createElement("div");
+  new_card_bookmark.classList.add("bookmarkContainer");
+  const new_card_bookmark_button = document.createElement("button");
+  new_card_bookmark_button.classList.add("bookmarkButton");
 
   form.append(new_card_section);
   new_card_section.append(new_card_question);
   new_card_section.append(new_card_button);
   new_card_section.append(new_card_answer);
   new_card_section.append(new_card_tag);
-  //   new_card_section.append(new_card_bookmark);
-  //   new_card_bookmark.append(new_card_bookmark_button);
+  new_card_section.append(new_card_bookmark);
+  new_card_bookmark.append(new_card_bookmark_button);
 
-  //   new_card_bookmark_button.addEventListener("click", () => {
-  //     new_card_bookmark_button.classList.toggle("bookmarkChecked");
-  //   });
+  new_card_bookmark_button.addEventListener("click", () => {
+    new_card_bookmark_button.classList.toggle("bookmarkChecked");
+  });
 });

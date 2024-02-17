@@ -1,6 +1,6 @@
 // --- BOOKMARK BUTTON ---//
-const card1 = document.querySelector('[data-js="card1"]');
-const bookmark_button = card1.querySelector('[data-js="bookmark-button"]');
+const card = document.querySelector('[data-js="card"]');
+const bookmark_button = card.querySelector('[data-js="bookmark-button"]');
 
 bookmark_button.addEventListener("click", () => {
   bookmark_button.classList.toggle("bookmarkChecked");
