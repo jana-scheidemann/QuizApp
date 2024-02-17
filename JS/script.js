@@ -25,9 +25,9 @@ answer_buttons.forEach((answer_button) => {
 });
 
 // --- DARK MODE ---//
-const html_element = document.querySelector("html");
-const dark_mode = document.querySelector('[data-js="dark-switch"]');
+// const html_element = document.querySelector("html");
+// const dark_mode = document.querySelector('[data-js="dark-switch"]');
 
-dark_mode.addEventListener("click", () => {
-  html_element.classList.toggle("dark");
-});
+// dark_mode.addEventListener("click", () => {
+//   html_element.classList.toggle("dark");
+// });

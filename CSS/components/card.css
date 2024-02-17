@@ -11,6 +11,13 @@
   box-shadow: 5px 5px 5px var(--color-dark);
 }
 
+.answerButton {
+  background-color: var(--color-medium);
+  color: var(--color-foam);
+  height: 2rem;
+  width: max-content;
+}
+
 .bookmarkContainer {
   position: absolute;
   top: -1em;

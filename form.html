@@ -17,14 +17,34 @@
       <form>
         <fieldset class="fieldsetContainer">
           <label for="questionField">Your question: </label>
-          <textarea name="questionField" id="questionField"> </textarea>
+          <textarea
+            name="questionField"
+            id="questionField"
+            maxlength="150"
+            required
+          ></textarea>
+          <div class="characterCount">
+            <span id="characters-left-q">150</span>
+            <span>characters left</span>
+          </div>
 
           <label for="answerField">Your answer: </label>
-          <textarea name="answerField" id="answerField"> </textarea>
+          <textarea
+            name="answerField"
+            id="answerField"
+            maxlength="150"
+            required
+          ></textarea>
+          <div class="characterCount">
+            <span data-js="characters-left-a">150</span>
+            <span>characters left</span>
+          </div>
 
           <label for="tagField">Tag: (seperated by ",")</label>
           <input type="text" name="tagField" id="tagField" />
-          <button type="submit" data-js="form-submit-button">submit</button>
+          <button type="submit" data-js="form-submit-button">
+            create a new card
+          </button>
         </fieldset>
       </form>
     </main>
