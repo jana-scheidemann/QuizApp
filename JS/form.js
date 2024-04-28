@@ -1,4 +1,21 @@
 // ------ FORM ------//
+
+// --- count characters left --- //
+
+const question_Field = document.getElementById("questionField");
+const countq = document.getElementById("characters-left-q");
+question_Field.addEventListener("input", () => {
+  const remainingCharsQ = 150 - question_Field.value.length;
+  countq.textContent = remainingCharsQ;
+});
+
+const answer_Field = document.getElementById("answerField");
+const counta = document.querySelector('[data-js="characters-left-a"]');
+answer_Field.addEventListener("input", () => {
+  const remainingCharsA = 150 - answer_Field.value.length;
+  counta.textContent = remainingCharsA;
+});
+
 const forms = document.querySelectorAll('[data-js="new-card-container"]');
 forms.forEach((form) => {
   form.addEventListener("submit", (event) => {
@@ -67,22 +84,4 @@ forms.forEach((form) => {
     formElements.questionField.focus();
     event.target.reset();
   });
-});
-
-// --- count characters left --- //
-
-const question_Field = document.getElementById("questionField");
-const countq = document.getElementById("characters-left-q");
-
-question_Field.addEventListener("input", () => {
-  const remainingCharsQ = 150 - question_Field.value.length;
-  countq.textContent = remainingCharsQ;
-});
-
-const answer_Field = document.getElementById("answerField");
-const counta = document.querySelector('[data-js="characters-left-a"]');
-
-answer_Field.addEventListener("input", () => {
-  const remainingCharsA = 150 - answer_Field.value.length;
-  counta.textContent = remainingCharsA;
 });
