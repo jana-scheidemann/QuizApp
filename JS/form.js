@@ -25,9 +25,7 @@ forms.forEach((form) => {
     const questionInput = formElements.questionField.value;
     const answerInput = formElements.answerField.value;
     const tagInput = formElements.tagField.value;
-    //   const formData = new FormData(event.target);
-    //   const data = Object.fromEntries(formData);
-
+    
     // --- create a new card --- //
     const new_card_section = document.createElement("section");
     new_card_section.classList.add("cardContainer");
@@ -83,5 +81,7 @@ forms.forEach((form) => {
 
     formElements.questionField.focus();
     event.target.reset();
+    countq.textContent = 150;
+    counta.textContent = 150;
   });
 });

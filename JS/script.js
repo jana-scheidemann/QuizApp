@@ -11,14 +11,14 @@ bookmark_buttons.forEach((bookmark_button) => {
 
 // --- ANSWER BUTTON ---//
 const answer_buttons = document.querySelectorAll('[data-js="answer-button"]');
-const answer_text = document.querySelector('[data-js="answer-text"]');
-answer_buttons.forEach((answer_button) => {
+const answer_text = document.querySelectorAll('[data-js="answer-text"]');
+answer_buttons.forEach((answer_button, index) => {
   answer_button.addEventListener("click", () => {
-    if (answer_text.hidden === true) {
-      answer_text.removeAttribute("hidden");
+    if (answer_text[index].hidden === true) {
+      answer_text[index].removeAttribute("hidden");
       answer_button.textContent = "click to hide answer";
     } else {
-      answer_text.setAttribute("hidden", "");
+      answer_text[index].setAttribute("hidden", "");
       answer_button.textContent = "click to show answer";
     }
   });

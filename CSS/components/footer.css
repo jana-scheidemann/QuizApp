@@ -10,7 +10,7 @@
 }
 
 a:hover {
-  background: var(--color-foam);
+  background-color: var(--color-grey);
 }
 
 .active {
