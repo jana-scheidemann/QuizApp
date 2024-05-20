@@ -3,6 +3,8 @@
   flex-direction: column;
   gap: 1em;
   border: none;
+  width: 60%;
+  margin: 0 20%;
 }
 
 .characterCount {
